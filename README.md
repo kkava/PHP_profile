@@ -22,7 +22,7 @@ function myFunc2($parms) {
 
 print_profile();    // Prints a summary of profile time sums (in ms) for each function profiled
 
-Example output:
+/* Example output:
 Profile:
 ---------------------------
   Function: myFunc
@@ -38,5 +38,6 @@ Profile:
   Start time: 124463456465
   End time: 124463456568
   Average time: 103
+*/
 
 </pre>
