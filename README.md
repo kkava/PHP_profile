@@ -1,5 +1,5 @@
 # PHP_profile
-A very simple PHP profiler that consists of just two functions - one that toggles the profiler and another that prints out a summary of the profiler results. The profiler can be called for 
+A very simple PHP profiler that consists of just two functions - one that toggles the profiler and another that prints out a summary of the profiler results. The profiler can be called for an arbitrary number of functions in an arbitrary order - it stores the statistics for each function separately by name.
 
 Usage:
 
@@ -28,17 +28,17 @@ print_profile();    // Prints a summary of profile time sums (in ms) for each fu
 /* Example output:
 Profile:
 ---------------------------
-  Function: myFunc
-  Calls:  1
-  Total time: 103
-  Start time: 124463456465
-  End time: 124463456568
-  Average time: 103
+  Function: myFunc            // Function's name
+  Calls:  1                   // Number of calls logged
+  Total time: 103             // Time sum of all calls between toggling profile() calls
+  Start time: 0               // 0: not currently profiling this function, non-zero: time profile operation last started
+  End time: 124463456568      // End time of last profile closing call (not very useful info)
+  Average time: 103           // Total time / Calls
 ---------------------------
   Function: myFunc2
   Calls:  1
   Total time: 103
-  Start time: 124463456465
+  Start time: 0
   End time: 124463456568
   Average time: 103
 */
