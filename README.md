@@ -22,7 +22,15 @@ print_profile();    // Prints a summary of profile time sums (in ms) for each fu
 
 Example output:
 Profile:
+---------------------------
   Function: myFunc
+  Calls:  1
+  Total time: 103
+  Start time: 124463456465
+  End time: 124463456568
+  Average time: 103
+---------------------------
+  Function: myFunc2
   Calls:  1
   Total time: 103
   Start time: 124463456465
