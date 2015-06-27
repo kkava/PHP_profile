@@ -4,6 +4,7 @@ A very simple PHP profiler that consists of just two functions - one that toggle
 Usage:
 
 <pre>
+include "./php_profile.php";
 
 function myFunc($parms) {
   profile();
@@ -20,6 +21,8 @@ function myFunc2($parms) {
 // The global variable $GLOBALS['profile'] now contains a profile object which is a multidim array
 // The structure of this array is obvious from the code in php_profile.php, and you don't have to know it.
 
+myFunc();
+myFunc2();
 print_profile();    // Prints a summary of profile time sums (in ms) for each function profiled
 
 /* Example output:
