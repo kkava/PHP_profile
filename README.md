@@ -3,6 +3,8 @@ A very simple PHP profiler that consists of just two functions - one that toggle
 
 Usage:
 
+<pre>
+
 function myFunc($parms) {
   profile();
   // Do stuff
@@ -36,3 +38,5 @@ Profile:
   Start time: 124463456465
   End time: 124463456568
   Average time: 103
+
+</pre>
