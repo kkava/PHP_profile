@@ -1,6 +1,8 @@
 # PHP_profile
 A very simple PHP profiler that consists of just two functions - one that toggles the profiler and another that prints out a summary of the profiler results. The profiler can be called for an arbitrary number of functions in an arbitrary order - it stores the statistics for each function separately by name.
 
+Note that if you only call the profiler once within a function (and then call that function multiple times) it will give you the time taken to traverse the rest of the code between calls (including time spent in the function itself) - untested.
+
 Usage:
 
 <pre>
